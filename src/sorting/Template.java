@@ -5,7 +5,7 @@ import array.PrintArray;
 public class Template {
 	public static void main(String[] args) {
 		
-		int [] arr = {76,98,3,9,21,34,8,1,44};
+		int [] arr = {5, 2, 7, 6, 3, 8, 1};
 		PrintArray.print(arr);
 		sort(arr);
 		PrintArray.print(arr);

@@ -3,32 +3,39 @@ package sorting;
 import array.PrintArray;
 
 public class A {
-	public static void main(String[] args) {
-		System.out.println("A");
-		int [] arr = {76,98,3,9,21,34,8,1,44};
-		PrintArray.print(arr);
-		sort(arr);
-		PrintArray.print(arr);
-	}
+    public static void main(String[] args) {
+        int[] arr = {76, 98, 3, 9, 21, 34, 8, 1, 44};
+        PrintArray.print(arr);
+        quickSort(arr, 0, arr.length - 1);
+        PrintArray.print(arr);
+    }
 
-	private static void sort(int[] arr) {
-		int count = 0;
-		int temp;
-		int n = arr.length;
-		
-		for (int i = 0; i < n-1; i++) {
-			for (int j = 0; j < n-i-1; j++) {
-				
-				count++;
-				if(arr[j] > arr[j+1]) {
-					temp = arr[j];
-					arr[j] = arr[j+1];
-					arr[j+1] = temp;
-				}
-				
-			}
-		}
-		System.out.println(count);
-		
-	}
+    private static void quickSort(int[] arr, int low, int high) {
+        if (low < high) {
+            int pi = partition(arr, low, high);
+            quickSort(arr, low, pi - 1);
+            quickSort(arr, pi + 1, high);
+        }
+    }
+
+    private static int partition(int[] arr, int low, int high) {
+        int pivot = arr[high];
+        int i = (low - 1); // Index of smaller element
+        
+        for (int j = low; j < high; j++) {
+            if (arr[j] < pivot) {
+                i++;
+                // Swap arr[i] and arr[j]
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+
+        int temp = arr[i + 1];
+        arr[i + 1] = arr[high];
+        arr[high] = temp;
+
+        return i + 1;
+    }
 }
