@@ -5,9 +5,9 @@ import array.PrintArray;
 public class QuickSort {
 	public static void main(String[] args) {
 		
-		int [] arr = {5, 2, 7, 6, 3, 8, 1};
+		int [] arr = {5, 2, 7, 6, 6, 9, 3, 8, 1};
 		PrintArray.print(arr);
-		quickSort(arr, 0, arr.length-1);
+		quickSort(arr, 0, arr.length-1); 
 		PrintArray.print(arr);
 	}
 	
