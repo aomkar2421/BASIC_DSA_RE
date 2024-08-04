@@ -4,7 +4,6 @@ import array.PrintArray;
 
 public class BubleSort {
 	public static void main(String[] args) {
-		System.out.println("A");
 		int [] arr = {76,98,3,9,21,34,8,1,44};
 		PrintArray.print(arr);
 		sort(arr);
