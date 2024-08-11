@@ -1,4 +1,4 @@
-package gfg;
+package gfg.array;
 
 import java.util.ArrayList;
 import java.util.TreeSet;
@@ -11,6 +11,7 @@ public class Intersection {
 
 		union(arr1, arr2);
 		intersection(arr1, arr2);
+
 
 	}
 

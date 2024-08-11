@@ -1,10 +1,11 @@
-package gfg;
+package gfg.array;
 
 import java.util.Arrays;
+import java.util.HashMap;
 
 import array.PrintArray;
 
-public class PairSum {
+public class PairSum2 {
 	
 	public static void main(String[] args) {
 		
@@ -21,25 +22,14 @@ public class PairSum {
 		int count = 0;
 		Arrays.sort(arr);
 
+		HashMap<Integer, Integer> hm = new HashMap<Integer, Integer>();
 		for(int i=0; i<n-1;i++) {
-			int val = sum - arr[i];
 			
-			int j=i+1, k=n-1;
-			
-			while (j<=k) {
-				int m = j+(k-j)/2;
-				
-				if(arr[m] == val) {
-					count++;
-					break;
-				}
-				else if (arr[m] > val) {
-					k=m-1;
-				}
-				else if (arr[m] < val) {
-					j=m+1;
-				}
+			if(hm.containsKey(sum - arr[i])) {
+				count += hm.get(sum - arr[i]);
 			}
+			
+			hm.put(arr[i], hm.getOrDefault(arr[i], 0)+1);
 			
 		}
 		System.out.println(count);

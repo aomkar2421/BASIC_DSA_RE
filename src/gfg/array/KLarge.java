@@ -1,4 +1,4 @@
-package gfg;
+package gfg.array;
 
 import array.PrintArray;
 

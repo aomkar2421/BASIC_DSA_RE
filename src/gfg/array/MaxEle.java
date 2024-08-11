@@ -1,24 +1,24 @@
-package gfg;
+package gfg.array;
 
-public class MinEle {
+public class MaxEle {
 	
 	public static void main(String[] args) {
 		
-		int arr [] = {4,9,10,1,20,7,8};
+		int arr [] = {4,92,10,1,20,7,8};
 		function(arr);
 		
 	}
 	
 	static void function(int [] arr) {
 		
-		int min = Integer.MAX_VALUE;
+		int max = Integer.MIN_VALUE;
 		
 		for (int i = 0; i < arr.length; i++) {
-			if(arr[i] < min) {
-				min = arr[i];
+			if(arr[i] > max) {
+				max = arr[i];
 			}
 		}
-		System.out.println(min);
+		System.out.println(max);
 	}
 	
 }
