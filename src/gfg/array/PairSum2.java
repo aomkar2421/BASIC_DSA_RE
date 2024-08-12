@@ -3,7 +3,7 @@ package gfg.array;
 import java.util.Arrays;
 import java.util.HashMap;
 
-import array.PrintArray;
+import gfg.array.PrintArray;
 
 public class PairSum2 {
 	

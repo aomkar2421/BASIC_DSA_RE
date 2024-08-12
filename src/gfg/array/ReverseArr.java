@@ -1,6 +1,6 @@
 package gfg.array;
 
-import array.PrintArray;
+import gfg.array.PrintArray;
 
 public class ReverseArr {
 	

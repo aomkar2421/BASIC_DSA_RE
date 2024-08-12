@@ -1,6 +1,6 @@
 package gfg.array;
 
-import array.PrintArray;
+import gfg.array.PrintArray;
 
 public class KSmall {
 	// use bubble sort and kth small or large index will arrive on arr.length-k index

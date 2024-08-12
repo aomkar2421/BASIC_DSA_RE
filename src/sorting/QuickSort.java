@@ -1,6 +1,6 @@
 package sorting;
 
-import array.PrintArray;
+import gfg.array.PrintArray;
 
 public class QuickSort {
 	public static void main(String[] args) {

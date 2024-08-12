@@ -3,7 +3,7 @@ package gfg.array;
 import java.util.HashMap;
 import java.util.HashSet;
 
-import array.PrintArray;
+import gfg.array.PrintArray;
 
 public class FirstRepeating {
 

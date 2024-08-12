@@ -2,7 +2,7 @@ package gfg.array;
 
 import java.util.Arrays;
 
-import array.PrintArray;
+import gfg.array.PrintArray;
 
 public class PairSum {
 	

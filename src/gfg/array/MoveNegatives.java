@@ -2,7 +2,7 @@ package gfg.array;
 
 import java.util.ArrayList;
 
-import array.PrintArray;
+import gfg.array.PrintArray;
 
 public class MoveNegatives {
 
