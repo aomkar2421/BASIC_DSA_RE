@@ -5,7 +5,7 @@ import gfg.array.PrintArray;
 public class MergeSort {
 	public static void main(String[] args) {
 
-		int [] arr = {5, 2, 7, 6, 8, 1};
+		int [] arr = {5, 2, 7, 6, 8, 1, 6, 8,3};
 		PrintArray.print(arr);
 		sort(arr, 0, arr.length-1);
 		PrintArray.print(arr);
@@ -13,14 +13,13 @@ public class MergeSort {
 	}
 
 	
-
 	private static void sort(int[] arr, int l, int r) {
 		
 		if(l >= r) {
 			return;
 		}
 		
-		int m = l + (r-l)/2;
+		int m = (l+r)/2;
 		
 		sort(arr, l, m);
 		sort(arr, m+1, r);
