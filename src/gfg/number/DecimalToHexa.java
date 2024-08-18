@@ -1,7 +1,5 @@
 package gfg.number;
 
-import array.PrintArray;
-
 public class DecimalToHexa {
 	public static void main(String[] args) {
 		
@@ -12,24 +10,27 @@ public class DecimalToHexa {
 	}
 
 	private static void function(int n) {
-		int temp;
-		char [] hexa = new char[100];
+		int rem;
+		char ch = 0;
 		int i = 0;
-		
+        StringBuilder temp = new StringBuilder();
+
 		while (n!=0) {
-			temp = n%10;
+			rem = n%16;
 			
-			if (temp < 10) {
-				hexa[i] = (char) (temp+48);
-				i++;
+			if (rem < 10) {
+				ch = (char) (rem+48);
 			}
-			else  if (temp >= 10) {
-				hexa[i] = (char) (temp+55);
-				i++;
+			else  if (rem >= 10) {
+				ch = (char) (rem+55);
 			} 
+			
+			temp.append(ch);
+			i++;
+			n = n/16;
 		}
 		
-		for
+        System.out.println(temp);
 		
 	}
 }
