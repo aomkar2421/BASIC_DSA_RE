@@ -25,8 +25,8 @@ public class EncryptString {
 			sb.append(convertToHex(count));
 
 		}	
-		sb.reverse();
-		System.out.println(sb);
+		String s = sb.reverse().toString();
+		System.out.println(s.toLowerCase());
 	}
 
 	static String convertToHex(int n) {
